@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentfulService } from './contentful.service';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ToHtmlPipe } from './to-html.pipe';
 // import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    ToHtmlPipe
   ],
   imports: [
     BrowserModule,

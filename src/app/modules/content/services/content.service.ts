@@ -13,11 +13,16 @@ export class ContentService {
     accessToken: environment.contentful.accessToken
   })
   constructor() { }
-  getJobListing(query?: object) {
+  getJobListings(query?: object) {
     return from(
       this.client.getEntries<TypeJobListingFields>(Object.assign({
         content_type: 'jobListing'
-      },query))
+      }, query))
+    )
+  }
+  getJobListingById(jobListingId: string, query?: any) {
+    return from(
+      this.client.getEntry<TypeJobListingFields>(jobListingId, query)
     )
   }
 }
