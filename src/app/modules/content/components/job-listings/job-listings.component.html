@@ -1,3 +1,19 @@
+<div class="content">
+  <div class="jobListings">
+    <ng-container *ngIf="jobListings | async as jobListings">
+      <div *ngFor="let j of jobListings" class="jobListings">
+        <div class="post-image">
+          <!-- <img src="{{p.fields.image.fields.file.url}}" /> -->
+        </div>
+        <a [routerLink]="['/posts/',p.sys.id]">
+          <div class="post-title">
+            {{p.fields.title}}
+          </div>
+        </a>
+      </div>
+    </ng-container>
+  </div>
+</div>
 <ul>
   <li>satu</li>
   <li>dua</li>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +17,7 @@ import { ToHtmlPipe } from './to-html.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule, RouterModule
     // HttpClientModule
   ],
   providers: [ContentfulService],
