@@ -8,21 +8,29 @@ import { from } from 'rxjs';
   providedIn: 'root'
 })
 export class ContentService {
-  client = createClient({
+  // private CONFIG = {
+  //   space: environment.contentful.spaceId,
+  //   accessToken: environment.contentful.accessToken,
+  //   contentTypeIds: {
+  //     angularBlog: 'angularBlog'
+  //   }
+  // }
+  private cdaClient = createClient({
     space: environment.contentful.spaceId,
     accessToken: environment.contentful.accessToken
   })
-  constructor() { }
+  constructor() {
+  }
   getJobListings(query?: object) {
     return from(
-      this.client.getEntries<TypeJobListingFields>(Object.assign({
+      this.cdaClient.getEntries<TypeJobListingFields>(Object.assign({
         content_type: 'jobListing'
       }, query))
     )
   }
   getJobListingById(jobListingId: string, query?: any) {
     return from(
-      this.client.getEntry<TypeJobListingFields>(jobListingId, query)
+      this.cdaClient.getEntry<TypeJobListingFields>(jobListingId, query)
     )
   }
 }

@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { ContentfulService } from './contentful.service';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ToHtmlPipe } from './to-html.pipe';
+import { PostsPageComponent } from './modules/post/components/posts-page/posts-page.component';
+import { PostDetailsComponent } from './modules/post/components/post-details/post-details.component';
 // import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
-    ToHtmlPipe
+    ToHtmlPipe,
+    PostsPageComponent,
+    PostDetailsComponent
   ],
   imports: [
     BrowserModule,

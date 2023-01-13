@@ -4,7 +4,8 @@ export const environment = {
     spaceId: 'g18ofyk6marz',
     accessToken: 'kCHCtNmvPZIAzXRRvi4Ek04QhGYPbTw_8iqNkPoQKUw',
     contentTypeIds: {
-      jobListing: 'jobListing'
+      jobListing: 'jobListing',
+      angularBlog: 'angularBlog'
     }
   }
   // apiUrl: 'http://localhost:8000',
