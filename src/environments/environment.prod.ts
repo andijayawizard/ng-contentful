@@ -2,7 +2,7 @@ export const environment = {
   production: true,
   contentful: {
     spaceId: 'g18ofyk6marz',
-    accessToken: 'kCHCtNmvPZIAzXRRvi4Ek04QhGYPbTw_8iqNkPoQKUw',
+    accessToken: '4axoZZtERjcjwPbN-8jSZtTOOOw20yokyKqnNkW27YY',
     contentTypeIds: {
       jobListing: 'jobListing',
       angularBlog: 'angularBlog'
