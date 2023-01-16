@@ -37,7 +37,7 @@ export class ContentfulService {
       })
     ).pipe(map(posts => posts.items))
   }
-  // getPost(id: string): any {
-  //   return from(this.cdaClient.getEntry(id))
-  // }
+  getPost(id: string): any {
+    return from(this.cdaClient.getEntry(id))
+  }
 }
