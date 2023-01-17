@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentfulService } from './contentful.service';
-import { ProductListComponent } from './product-list/product-list.component';
 import { ToHtmlPipe } from './to-html.pipe';
 import { PostsPageComponent } from './modules/post/components/posts-page/posts-page.component';
 import { PostDetailsComponent } from './modules/post/components/post-details/post-details.component';
@@ -14,7 +13,6 @@ import { PostDetailsComponent } from './modules/post/components/post-details/pos
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent,
     ToHtmlPipe,
     PostsPageComponent,
     PostDetailsComponent
