@@ -13,7 +13,7 @@ export class ProductService {
   constructor() { }
   getProducts(query?: object): Promise<Entry<any>[]> {
     return this.cdaClient.getEntries(Object.assign({
-      content_type: environment.contentful.contentTypeIds.jobListing
+      content_type: environment.contentful.contentTypeIds.product
     }, query)).then(res => res.items)
   }
 }

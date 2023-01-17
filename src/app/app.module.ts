@@ -8,21 +8,22 @@ import { ContentfulService } from './contentful.service';
 import { ToHtmlPipe } from './to-html.pipe';
 import { PostsPageComponent } from './modules/post/components/posts-page/posts-page.component';
 import { PostDetailsComponent } from './modules/post/components/post-details/post-details.component';
-// import { HttpClientModule } from '@angular/common/http';
+import { ProductService } from './modules/product/services/product.service';
+import { ProductModule } from './modules/product/product.module';
+import { BlogModule } from './modules/blog/blog.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToHtmlPipe,
     PostsPageComponent,
-    PostDetailsComponent
+    PostDetailsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, RouterModule
-    // HttpClientModule
+    AppRoutingModule, RouterModule, ProductModule, BlogModule
   ],
-  providers: [ContentfulService],
+  providers: [ContentfulService, ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,7 +9,9 @@ export const environment = {
     accessToken: '4axoZZtERjcjwPbN-8jSZtTOOOw20yokyKqnNkW27YY',
     contentTypeIds: {
       jobListing: 'jobListing',
-      angularBlog: 'angularBlog'
+      angularBlog: 'angularBlog',
+      product: 'product',
+      blog: 'blog'
     }
   }
   // apiUrl: 'http://localhost:8000',
