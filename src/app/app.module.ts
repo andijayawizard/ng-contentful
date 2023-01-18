@@ -11,6 +11,7 @@ import { PostDetailsComponent } from './modules/post/components/post-details/pos
 import { ProductService } from './modules/product/services/product.service';
 import { ProductModule } from './modules/product/product.module';
 import { BlogModule } from './modules/blog/blog.module';
+import { HousingListComponent } from './shared/components/housing-list/housing-list.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { BlogModule } from './modules/blog/blog.module';
     ToHtmlPipe,
     PostsPageComponent,
     PostDetailsComponent,
+    HousingListComponent,
   ],
   imports: [
     BrowserModule,
