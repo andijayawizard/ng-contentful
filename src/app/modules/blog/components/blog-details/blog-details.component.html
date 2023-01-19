@@ -1,1 +1,8 @@
-<p>blog-details works!</p>
+<ng-container *ngIf="blog">
+  <h4>
+    {{blog.title}}
+  </h4>
+  <p>
+    {{blog.description}}
+  </p>
+</ng-container>

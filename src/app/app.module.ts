@@ -12,6 +12,7 @@ import { ProductService } from './modules/product/services/product.service';
 import { ProductModule } from './modules/product/product.module';
 import { BlogModule } from './modules/blog/blog.module';
 import { HousingListComponent } from './shared/components/housing-list/housing-list.component';
+import { JobListingModule } from './modules/job-listing/job-listing.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { HousingListComponent } from './shared/components/housing-list/housing-l
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, RouterModule, ProductModule, BlogModule
+    AppRoutingModule, RouterModule, ProductModule, BlogModule, JobListingModule
   ],
   providers: [ContentfulService, ProductService],
   bootstrap: [AppComponent]
