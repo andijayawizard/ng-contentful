@@ -6,10 +6,11 @@
   </button>
 </nav>
 <div>
-  <header><img src="../assets/logo.svg" alt="fairhouse">Fairhouse</header>
+  <!-- <header><img src="../assets/logo.svg" alt="fairhouse">Fairhouse</header> -->
   <section>
-    <app-housing-list [locationList]="housingLocationList"
-      (locationSelectedEvent)="updateSelectedLocation($event)"></app-housing-list>
+    <app-nav-bar></app-nav-bar>
+    <!-- <app-housing-list [locationList]="housingLocationList"
+      (locationSelectedEvent)="updateSelectedLocation($event)"></app-housing-list> -->
     <article>
       <ng-container *ngIf="selectedLocation">
         <img [src]="selectedLocation.photo">

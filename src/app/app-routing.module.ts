@@ -6,12 +6,12 @@ import { PostDetailsComponent } from './modules/post/components/post-details/pos
 import { ProductListComponent } from './modules/product/components/product-list/product-list.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'posts' },
-  { path: 'job-listings', component: JobListingsComponent },
-  { path: 'job-listing/:id', component: JobListingsComponent },
-  { path: 'posts', component: PostsPageComponent },
-  { path: 'post/:id', component: PostDetailsComponent },
-  { path: 'products', component: ProductListComponent }
+  { path: '', pathMatch: 'full', redirectTo: 'blog' },
+  // { path: 'job-listings', component: JobListingsComponent },
+  // { path: 'job-listing/:id', component: JobListingsComponent },
+  // { path: 'posts', component: PostsPageComponent },
+  // { path: 'post/:id', component: PostDetailsComponent },
+  // { path: 'products', component: ProductListComponent }
 
 ];
 

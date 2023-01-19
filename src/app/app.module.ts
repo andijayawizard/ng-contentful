@@ -13,6 +13,7 @@ import { ProductModule } from './modules/product/product.module';
 import { BlogModule } from './modules/blog/blog.module';
 import { HousingListComponent } from './shared/components/housing-list/housing-list.component';
 import { JobListingModule } from './modules/job-listing/job-listing.module';
+import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { JobListingModule } from './modules/job-listing/job-listing.module';
     PostsPageComponent,
     PostDetailsComponent,
     HousingListComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
