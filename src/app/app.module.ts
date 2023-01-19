@@ -14,6 +14,7 @@ import { BlogModule } from './modules/blog/blog.module';
 import { HousingListComponent } from './shared/components/housing-list/housing-list.component';
 import { JobListingModule } from './modules/job-listing/job-listing.module';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
+import { PostModule } from './modules/post/post.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, RouterModule, ProductModule, BlogModule, JobListingModule
+    AppRoutingModule, RouterModule, ProductModule, BlogModule, JobListingModule, PostModule
   ],
   providers: [ContentfulService, ProductService],
   bootstrap: [AppComponent]

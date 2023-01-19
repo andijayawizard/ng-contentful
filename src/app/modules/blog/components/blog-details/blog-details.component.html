@@ -1,8 +1,11 @@
-<ng-container *ngIf="blog">
-  <h4>
-    {{blog.title}}
-  </h4>
-  <p>
-    {{blog.description}}
-  </p>
-</ng-container>
+<div class="container-fluid">
+  <ng-container *ngIf="blog">
+    <h4>
+      {{blog.title}}
+    </h4>
+    {{blog.date}}
+    <p>
+      {{blog.description}}
+    </p>
+  </ng-container>
+</div>

@@ -1,5 +1,5 @@
-import { ContentfulService } from './../../../../contentful.service';
 import { Component } from '@angular/core';
+import { PostService } from '../../services/post.service';
 
 @Component({
   selector: 'app-posts-page',
@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./posts-page.component.scss']
 })
 export class PostsPageComponent {
-  posts$ = this.contentfulService.getPosts()
-  constructor(private contentfulService: ContentfulService) { }
+  posts$ = this.postService.getPosts()
+  constructor(private postService: PostService) { }
 }

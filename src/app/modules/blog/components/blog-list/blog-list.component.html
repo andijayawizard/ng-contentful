@@ -1,7 +1,9 @@
-<ng-container *ngIf="blog">
-  <div *ngFor="let b of blog">
-    <a [routerLink]="['/blog/',b.sys.id]">
-      {{b.fields.title}}
-    </a>
-  </div>
-</ng-container>
+<div class="container-fluid">
+  <ng-container *ngIf="blog">
+    <div *ngFor="let b of blog">
+      <a [routerLink]="['/blog/',b.sys.id]">
+        {{b.fields.title}}
+      </a>
+    </div>
+  </ng-container>
+</div>

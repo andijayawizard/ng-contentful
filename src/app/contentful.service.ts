@@ -15,29 +15,11 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ContentfulService {
-  private cdaClient = createClient({
-    // space: CONFIG.space,
-    // accessToken: CONFIG.accessToken,
-    space: environment.contentful.spaceId,
-    accessToken: environment.contentful.accessToken
-  })
   constructor() {
-    this.getPosts()
   }
-  getProducts(query?: object): Promise<Entry<any>[]> {
-    return this.cdaClient.getEntries(Object.assign({
-      content_type: environment.contentful.contentTypeIds.angularBlog
-    }, query)).then(res => res.items)
-  }
-  getPosts(query?: object): any {
-    return from(
-      this.cdaClient.getEntries({
-        ...Object,
-        content_type: environment.contentful.contentTypeIds.angularBlog, query
-      })
-    ).pipe(map(posts => posts.items))
-  }
-  getPost(id: string): any {
-    return from(this.cdaClient.getEntry(id))
-  }
+  // getProducts(query?: object): Promise<Entry<any>[]> {
+  //   return this.cdaClient.getEntries(Object.assign({
+  //     content_type: environment.contentful.contentTypeIds.angularBlog
+  //   }, query)).then(res => res.items)
+  // }
 }
