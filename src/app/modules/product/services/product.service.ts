@@ -16,4 +16,7 @@ export class ProductService {
       content_type: environment.contentful.contentTypeIds.product
     }, query)).then(res => res.items)
   }
+  getDetails(id: string): any {
+    return this.cdaClient.getEntry(id)
+  }
 }

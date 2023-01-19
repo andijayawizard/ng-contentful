@@ -1,3 +1,11 @@
-<ul class="u-listReset">
-  <li *ngFor="let product of products">{{ product.fields.productName }}</li>
-</ul>
+<div class="container-fluid">
+  <ng-container *ngIf="products">
+    <ul class="u-listReset">
+      <li *ngFor="let p of products">
+        <a [routerLink]="['/product',p.sys.id]">
+          {{ p.fields.productName }}
+        </a>
+      </li>
+    </ul>
+  </ng-container>
+</div>
