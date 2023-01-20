@@ -9,7 +9,7 @@ import * as marked from "marked";
 export class MdToHtmlPipe implements PipeTransform {
 
   // transform(value: string): any {
-  //   return marked(value);
+  //   // return marked(value);
   // }
   transform(value: unknown, ...args: unknown[]): unknown {
     return documentToHtmlString(value as Document);

@@ -10,7 +10,6 @@ import { CourseDetailsComponent } from './components/course-details/course-detai
   declarations: [
     CourseListComponent,
     CourseDetailsComponent,
-    // ToHtmlPipe
   ],
   imports: [
     CommonModule,

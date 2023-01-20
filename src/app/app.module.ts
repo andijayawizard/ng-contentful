@@ -13,7 +13,6 @@ import { JobListingModule } from './modules/job-listing/job-listing.module';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { PostModule } from './modules/post/post.module';
 import { CourseModule } from './modules/course/course.module';
-import { MdToHtmlPipe } from './shared/pipes/md-to-html.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { MdToHtmlPipe } from './shared/pipes/md-to-html.pipe';
     PostDetailsComponent,
     HousingListComponent,
     NavBarComponent,
-    MdToHtmlPipe,
   ],
   imports: [
     BrowserModule,

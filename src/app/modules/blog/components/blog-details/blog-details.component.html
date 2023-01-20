@@ -1,13 +1,15 @@
 <div class="">
   <h1>Blog Details</h1>
   <ng-container *ngIf="blog">
-    <img src="{{blog.image}}">
-    <h4>
-      {{blog.title}}
-    </h4>
-    {{blog.date}}
-    <p>
-      {{blog.description}}
-    </p>
+    <div>
+      <img src="{{blog.image.fields.file.url}}" />
+      <h4>
+        {{blog.title}}
+      </h4>
+      <!-- <span>
+        {{blog.date}}
+      </span> -->
+      <!-- <p [innerHTML]="blog.description|mdToHtml"></p> -->
+    </div>
   </ng-container>
 </div>
