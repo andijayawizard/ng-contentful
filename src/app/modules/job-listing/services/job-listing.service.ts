@@ -13,10 +13,10 @@ export class JobListingService {
     accessToken: environment.contentful.accessToken
   })
   constructor() { }
-  getJobListing(query?: object) {
+  getJobListing(query?: object): any {
     return from(
       this.cdaClient.getEntries<JobListing>(Object.assign({
-        content_type: 'jobListing'
+        content_type: environment.contentful.contentTypeIds.jobListing
       }, query))
     )
   }

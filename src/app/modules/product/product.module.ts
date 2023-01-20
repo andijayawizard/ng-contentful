@@ -16,6 +16,6 @@ import { ProductDetailsComponent } from './components/product-details/product-de
   imports: [
     CommonModule,
     ProductRoutingModule, RouterModule
-  ], exports: [ProductListComponent], providers: [ProductService]
+  ], exports: [ProductListComponent, ProductDetailsComponent], providers: [ProductService]
 })
 export class ProductModule { }

@@ -1,7 +1,9 @@
 <ng-container *ngIf="jobListing">
   <div *ngFor="let j of jobListing">
-    <a [routerLink]="['/job-listing/',j.sys.id]">
-      {{j.fields}}
+    <a [routerLink]="['/job-listing/',j.sys.id]" class="link-default">
+      <h4>
+        {{j.fields.role}}
+      </h4>
     </a>
   </div>
 </ng-container>
