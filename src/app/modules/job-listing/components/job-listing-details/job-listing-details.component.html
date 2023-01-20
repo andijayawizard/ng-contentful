@@ -1,1 +1,10 @@
-<p>job-listing-details works!</p>
+<div class="">
+  <ng-container *ngIf="jobListing">
+    <h4>{{jobListing.role}}</h4>
+    <div><label>Description: </label> {{jobListing.description}}</div>
+    <div><label>How To Apply: </label> {{jobListing.howToApply}}</div>
+    <div><label>Organization: </label> {{jobListing.organization}}</div>
+    <div><label>Skills: </label> {{jobListing.skills}}</div>
+    <div><label>Date: </label> {{jobListing.date}}</div>
+  </ng-container>
+</div>

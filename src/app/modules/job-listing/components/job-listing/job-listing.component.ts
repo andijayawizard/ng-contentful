@@ -9,9 +9,9 @@ import { JobListingService } from '../../services/job-listing.service';
   styleUrls: ['./job-listing.component.scss']
 })
 export class JobListingComponent {
-  // jobListing: Entry<JobListing>[] | undefined
+  jobListing: Entry<JobListing>[] | undefined
   // jobListing: Entry<JobListing>[] = []
-  jobListing: Entry<any>[] = []
+  // jobListing: Entry<any>[] = []
 
   constructor(private jobListingService: JobListingService) { }
   ngOnInit(): void {

@@ -24,7 +24,7 @@ export class ContentService {
   getJobListings(query?: object) {
     return from(
       this.cdaClient.getEntries<TypeJobListingFields>(Object.assign({
-        content_type: 'jobListing'
+        content_type: environment.contentful.contentTypeIds.jobListing
       }, query))
     )
   }

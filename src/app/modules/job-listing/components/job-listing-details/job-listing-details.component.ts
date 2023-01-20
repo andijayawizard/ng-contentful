@@ -11,6 +11,8 @@ import { JobListingService } from '../../services/job-listing.service';
 })
 export class JobListingDetailsComponent {
   jobListing: JobListing | null = null
+  // jobListing: any | null = null
+
   constructor(private jobListingService: JobListingService, private route: ActivatedRoute) { }
   ngOnInit(): void {
     this.getDetails()

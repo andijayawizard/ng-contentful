@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 export class BlogService {
   private cdaClient = createClient({
     space: environment.contentful.spaceId,
-    accessToken: environment.contentful.accessToken
+    accessToken: environment.contentful.accessToken,
   })
 
   constructor() { }
