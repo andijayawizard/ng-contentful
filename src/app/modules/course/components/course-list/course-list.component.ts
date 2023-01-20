@@ -17,6 +17,5 @@ export class CourseListComponent {
   goToCourseDetailsPage(id: any) {
     console.log(id);
     this.router.navigate(['/course', id])
-
   }
 }

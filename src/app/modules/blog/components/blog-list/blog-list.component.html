@@ -1,10 +1,17 @@
 <div class="">
   <h1>Blog List</h1>
   <ng-container *ngIf="blog">
-    <div *ngFor="let b of blog">
-      <a [routerLink]="['/blog/',b.sys.id]">
-        {{b.fields.title}}
-      </a>
+    <div *ngFor="let b of blog" class="alert alert-info" role="alert">
+      <div class="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap">
+        <a [routerLink]="['/blog/',b.sys.id]" class="link-default">
+          <img src="{{b.fields.image.fields.file.url}}" class="rounded" width="100" />
+          <div class="p-2">
+            <h4 class="alert-heading">
+              {{b.fields.title}}
+            </h4>
+          </div>
+        </a>
+      </div>
     </div>
   </ng-container>
 </div>

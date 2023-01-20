@@ -1,5 +1,4 @@
 import { ActivatedRoute } from '@angular/router';
-import { ContentfulService } from '../../../../contentful.service';
 import { Component } from '@angular/core';
 import { PostService } from '../../services/post.service';
 
