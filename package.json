@@ -24,6 +24,7 @@
     "angular-bootstrap-md": "^4.3.2",
     "bootstrap": "^5.2.3",
     "contentful": "^9.2.15",
+    "marked": "^4.2.12",
     "mdb-angular-ui-kit": "^4.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

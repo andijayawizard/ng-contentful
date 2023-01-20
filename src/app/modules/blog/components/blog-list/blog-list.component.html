@@ -1,4 +1,5 @@
 <div class="">
+  <h1>Blog List</h1>
   <ng-container *ngIf="blog">
     <div *ngFor="let b of blog">
       <a [routerLink]="['/blog/',b.sys.id]">

@@ -1,6 +1,7 @@
 import { ActivatedRoute } from '@angular/router';
 import { ContentfulService } from '../../../../contentful.service';
 import { Component } from '@angular/core';
+import { PostService } from '../../services/post.service';
 
 @Component({
   selector: 'app-post-details',
@@ -9,6 +10,6 @@ import { Component } from '@angular/core';
 })
 export class PostDetailsComponent {
   id = this.route.snapshot.paramMap.get('id')
-  // post$ = this.contentfulService.getPost(this.id!)
-  constructor(private contentfulService: ContentfulService, private route: ActivatedRoute) { }
+  post$ = this.postService.getPost(this.id!)
+  constructor(private postService: PostService, private route: ActivatedRoute) { }
 }
