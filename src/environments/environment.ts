@@ -11,7 +11,8 @@ export const environment = {
       jobListing: 'jobListing',
       angularBlog: 'angularBlog',
       product: 'product',
-      blog: 'blog'
+      blog: 'blog',
+      course: 'course'
     }
   }
   // apiUrl: 'http://localhost:8000',

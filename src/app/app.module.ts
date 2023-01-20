@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentfulService } from './contentful.service';
-import { ToHtmlPipe } from './to-html.pipe';
 import { PostsPageComponent } from './modules/post/components/posts-page/posts-page.component';
 import { PostDetailsComponent } from './modules/post/components/post-details/post-details.component';
 import { ProductService } from './modules/product/services/product.service';
@@ -15,19 +14,21 @@ import { HousingListComponent } from './shared/components/housing-list/housing-l
 import { JobListingModule } from './modules/job-listing/job-listing.module';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { PostModule } from './modules/post/post.module';
+import { CourseModule } from './modules/course/course.module';
+import { MdToHtmlPipe } from './shared/pipes/md-to-html.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToHtmlPipe,
     PostsPageComponent,
     PostDetailsComponent,
     HousingListComponent,
     NavBarComponent,
+    MdToHtmlPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, RouterModule, ProductModule, BlogModule, JobListingModule, PostModule
+    AppRoutingModule, RouterModule, ProductModule, BlogModule, JobListingModule, PostModule, CourseModule
   ],
   providers: [ContentfulService, ProductService],
   bootstrap: [AppComponent]
